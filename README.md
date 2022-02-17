@@ -23,11 +23,17 @@ mongodb（基于motor库）, 支持的操作如下：
 
 ### 依赖 
 
-python >= 3.6
-pydantic==1.9.0
-asyncpg==0.25.0
-pytest==7.0.1
-motor==2.5.1
+- python >= 3.6
+
+- pydantic==1.9.0
+
+- asyncpg==0.25.0
+
+- pytest==7.0.1
+
+- motor==2.5.1
+
+  
 
 ### 用例
 参考test/test_manager.py
