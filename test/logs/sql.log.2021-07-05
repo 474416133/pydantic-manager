@@ -1,0 +1,12 @@
+[2021-07-05 11:00:53,989] [pydantic.manage] [managers:create:330] [DEBUG]- [INSERT] SQL:INSERT INTO room (id, name, avatar) VALUES ($1, $2, $3) ON CONFLICT (id) DO NOTHING  ; data:{'id': '9be66d4ce3e544e7b7c365fb9d327bda', 'name': 'gcb', 'avatar': '://avatar.png'} 
+[2021-07-05 11:05:27,283] [pydantic.manage] [pg:append_set_statement:60] [DEBUG]- update_fields: (('avatar', <IncreasePolicyEnum.NOTHING: '{0} = {1}'>),), len: 1
+[2021-07-05 11:06:51,577] [pydantic.manage] [pg:append_set_statement:60] [DEBUG]- update_fields: (('name', <IncreasePolicyEnum.NOTHING: '{0} = {1}'>), ('avatar', <IncreasePolicyEnum.NOTHING: '{0} = {1}'>)), len: 2
+[2021-07-05 11:08:06,628] [pydantic.manage] [managers:delete:488] [DEBUG]- [DELETE] SQL:DELETE FROM room WHERE id = $1, PARAMS:9be66d4ce3e544e7b7c365fb9d327bda, RET:DELETE 1
+[2021-07-05 11:12:35,630] [pydantic.manage] [managers:create:330] [DEBUG]- [INSERT] SQL:INSERT INTO room (id, name, avatar) VALUES ($1, $2, $3) ON CONFLICT (id) DO NOTHING  ; data:{'id': '84b97fedc3b64b7f82064100246a3ea1', 'name': 'gcb', 'avatar': '://avatar.png'} 
+[2021-07-05 11:13:19,182] [pydantic.manage] [pg:append_set_statement:60] [DEBUG]- update_fields: (('name', <IncreasePolicyEnum.NOTHING: '{0} = {1}'>), ('avatar', <IncreasePolicyEnum.NOTHING: '{0} = {1}'>)), len: 2
+[2021-07-05 11:13:19,257] [pydantic.manage] [managers:update:433] [DEBUG]- [UPDATE] sql:UPDATE room SET name = $2, avatar = $3 WHERE id = $1, params: ['84b97fedc3b64b7f82064100246a3ea1', 'gcb3', '://avatar3.png'], update_fields:None, inc_fields: None, compiled_update: (('name', <IncreasePolicyEnum.NOTHING: '{0} = {1}'>), ('avatar', <IncreasePolicyEnum.NOTHING: '{0} = {1}'>)),ret: UPDATE 1
+[2021-07-05 13:16:20,233] [pydantic.manage] [managers:get_raw:363] [DEBUG]- [SELECT] SQL:SELECT T1.id AS id, T1.name AS name, T1.avatar AS avatar FROM room WHERE id = $1, PARAMS:a00afc410618461a80e4756292f591c5
+[2021-07-05 21:38:59,320] [pydantic.manage] [managers:get_raw:363] [DEBUG]- [SELECT] SQL:SELECT id, name, avatar FROM room  WHERE id = $1, PARAMS:a00afc410618461a80e4756292f591c5
+[2021-07-05 21:39:53,726] [pydantic.manage] [managers:get_raw:363] [DEBUG]- [SELECT] SQL:SELECT id, name, avatar FROM room  WHERE id = $1, PARAMS:a00afc410618461a80e4756292f591c5
+[2021-07-05 21:47:40,556] [pydantic.manage] [managers:get_raw:363] [DEBUG]- [SELECT] SQL:SELECT id, name, avatar FROM room  WHERE id = $1, PARAMS:a00afc410618461a80e4756292f591c5
+[2021-07-05 21:54:47,911] [pydantic.manage] [managers:find_by_field:591] [DEBUG]- [SELECT] 
